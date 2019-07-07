@@ -1,0 +1,19 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "To-do app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Task",
+    "schedulers",
+    "task",
+    "management",
+    "productivity"
+  ],
+  "author": "Ashish",
+  "license": "ISC"
+}
