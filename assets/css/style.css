@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding-top:70px;
+    
+}
+body::before{
+
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
+
+    content:"";      
+
+	display: block;     
+
+	position: absolute;     
+	top:0;             
+	left: 0;
+
+	z-index: -5;    
+
+	height: 100%;     
+	width: 100%;
+}
+#container{
+    height:auto;
+    min-height:70vh;
+    width:60vw;
+    
+    margin: auto;
+    
+
+    background-color: rgb(243, 237, 237);
+    box-shadow: -2px 3px 14px -1px rgba(0,0,0,0.75);
+
+}
