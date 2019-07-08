@@ -7,16 +7,23 @@
     <title>
         <%= title%>
     </title>
+    <!-- jquery ui css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
     <div id="container">
-        <form action="add-task" method="post">
-            <label for="des">Description</label>
+        <div id="title">
+            To-do App
+        </div>
+            <form action="add-task" method="post">
+            <div id="description-container">
+            <label for="des">Description</label><br>
             <input type="text" id="des" name="description" placeholder="What do you need to do?" required>
-
-            <label for="category">Category</label>
-
+            </div>
+            <div id="category-container" >
+            <label for="category">Category</label><br>
             <select name="category" id="category" >
                 <option selected>Choose a category</option>
                 <option>Personal</option>
@@ -25,7 +32,11 @@
                 <option>College</option>
                 <option>Other</option>
             </select>
-
+            </div>
+            <div id="date-container">
+            <label for="datepicker">Date </label><br>
+            <input type="text" id="datepicker" name="deadline" placeholder="dd/mm/yr">
+            </div>
             
 
 
@@ -33,7 +44,10 @@
         </form>
 
     </div>
-    
+    <!-- script for jquery ui -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- custom js -->
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
