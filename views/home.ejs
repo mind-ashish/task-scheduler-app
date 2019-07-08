@@ -17,7 +17,7 @@
         <div id="title">
             To-do App
         </div>
-            <form action="/add-task" method="post" id="task-form">
+            <form action="/add-task" method="POST" id="task-form">
             <div id="description-container">
             <label for="des">Description</label><br>
             <input type="text" id="des" name="description" placeholder="What do you need to do?" required>
@@ -41,7 +41,7 @@
             <div id="button-holder">
                 <!-- here using the form attribute with button to signify, which button is working/submitting for which form. -->
                     <button type="submit" id="add" form="task-form" ><i class="fas fa-plus"></i> Add task</button>
-                    <button type="button" id="delete" formaction="/delete-task"><i class="fas fa-trash-alt"></i> Delete task(s)</button>
+                    <button type="button" id="delete" ><i class="fas fa-trash-alt"></i> Delete task(s)</button>
             </div>
        
         
