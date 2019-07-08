@@ -104,6 +104,7 @@ body::before{
     font-size:1rem;
     margin-top:2px;
     color:white;
+    outline: none;
 
 }
 #add a,#delete a{
@@ -112,6 +113,7 @@ body::before{
 }
 #add{
     background-color: green;
+    
 }
 #delete{
     background-color: red;
