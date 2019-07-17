@@ -118,3 +118,31 @@ body::before{
 #delete{
     background-color: red;
 }
+.Personal{
+ background-color: red;
+}
+.Office{
+background-color: grey;
+}
+.Home{
+background-color: green;
+}
+.College{
+background-color: yellow;
+color:black !important;
+}
+.Other{
+background-color: blue;
+}
+.button-rounded{
+    width:80px;
+    height:30px;
+    text-align: center;
+    color:white;
+    border:1px solid black;
+    border-radius: 500px;
+
+}
+#task-deletion li{
+    list-style-type: none;
+}

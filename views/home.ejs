@@ -50,7 +50,7 @@
                                 <ul>
                                     <%    for(let i of all_tasks){      %>
                                             <li>
-                                                <input type="checkbox" name="task" value="<%=i._id%>">  <%= i.description %>  <%=i.deadline%> <%= i.category%>
+                                                <input type="checkbox" name="task" value="<%=i._id%>">  <%= i.description %> &nbsp;&nbsp; <%=i.deadline%> &nbsp;&nbsp;<span class="<%= i.category%> button-rounded" > <%= i.category%> </span>
                                                 <!-- name of all checkboxes is task, so req.body.task
                                                 when this form gets submitted ,all checkboxes selected i.e on checkboxes will give their value their
                                                 so req.body.task will return an array of i._id corresponding to selected checkboxes  -->
