@@ -41,7 +41,27 @@
             <div id="button-holder">
                 <!-- here using the form attribute with button to signify, which button is working/submitting for which form. -->
                     <button type="submit" id="add" form="task-form" ><i class="fas fa-plus"></i> Add task</button>
-                    <button type="button" id="delete" ><i class="fas fa-trash-alt"></i> Delete task(s)</button>
+                    <button type="submit" id="delete" form="task-deletion" ><i class="fas fa-trash-alt"></i> Delete task(s)</button>
+                    <!-- this button is for task-deletion form below --> 
+            </div>
+            <div id="tasks-list">
+                    
+                        <form action="/delete-tasks" method="POST" id="task-deletion">
+                                <ul>
+                                    <%    for(let i of all_tasks){      %>
+                                            <li>
+                                                <input type="checkbox" name="task" value="<%=i._id%>">  <%= i.description %>  <%=i.deadline%> <%= i.category%>
+                                                <!-- name of all checkboxes is task, so req.body.task
+                                                when this form gets submitted ,all checkboxes selected i.e on checkboxes will give their value their
+                                                so req.body.task will return an array of i._id corresponding to selected checkboxes  -->
+                                            </li>
+                                    <%    }      %>
+                                </ul>
+                                
+                        </form>
+                            
+                    
+                
             </div>
        
         

@@ -1,6 +1,9 @@
 const express=require('express');
 const app=express();
 const port=8000;
+const db=require('./config/mongoose');
+
+app.use(express.urlencoded());
 
 //set static files
 app.use(express.static('./assets'));
